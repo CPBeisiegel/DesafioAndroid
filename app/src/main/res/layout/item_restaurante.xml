@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagemRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgrest" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/nomeRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Titulo Restaurante"
+                android:textColor="#222222"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/enderecoRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Endereço restaurante"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/horarioFuncionamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horario de funionamento"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
