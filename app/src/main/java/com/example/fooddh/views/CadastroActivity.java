@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.fooddh.R;
 import com.google.android.material.textfield.TextInputLayout;
@@ -49,10 +50,8 @@ public class CadastroActivity extends AppCompatActivity {
             textEmail.setError("Campo obrigatório");
             textPassword.setError("Campo obrigatório");
             textRepetirPassword.setError("Campo obrigatório");
-        } else if((password.equals(confirmarPassword) && !password.isEmpty() && !confirmarPassword.isEmpty())) {
-            textPassword.setError("As senhas não coinciedem");
-            textRepetirPassword.setError("As senhas não coinciedem");
-        } else{
+        } else if (password.equals(confirmarPassword) && !password.isEmpty() && !confirmarPassword.isEmpty()) {
+           Toast.makeText(getApplicationContext(),"Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(CadastroActivity.this,HomeActivity.class);
             startActivity(intent);
         }

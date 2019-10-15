@@ -44,20 +44,22 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
         android:layout_marginEnd="38dp"
         android:layout_marginRight="38dp"
         android:layout_marginBottom="78dp"
-        android:text="Log in"
         android:background="@color/colorRed"
+        android:text="Log in"
         app:layout_constraintBottom_toTopOf="@+id/textViewOR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,15 +79,15 @@
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="332dp"
+        android:layout_height="44dp"
         android:layout_marginStart="38dp"
         android:layout_marginLeft="38dp"
         android:layout_marginEnd="38dp"
         android:layout_marginRight="38dp"
         android:layout_marginBottom="58dp"
-        android:text="Registrar"
         android:background="@color/colorGrey"
+        android:text="Registrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

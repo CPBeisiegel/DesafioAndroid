@@ -12,7 +12,7 @@
         <activity android:name=".views.DetalhePratoActivity"></activity>
         <activity android:name=".views.RestauranteMenuActivity" />
         <activity android:name=".views.PerfilActivity" />
-        <activity android:name=".views.HomeActivity"/>
+        <activity android:name=".views.HomeActivity" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".views.CadastroActivity" android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".views.LoginActivity" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".views.SplashActivity">

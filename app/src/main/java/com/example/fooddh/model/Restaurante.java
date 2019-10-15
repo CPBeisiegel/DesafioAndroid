@@ -18,7 +18,7 @@ public class Restaurante implements Parcelable {
     }
 
 
-    public Restaurante(String nomeRestaurante, String enderecoRestaurante, int imagemRestaurante, String horarioDeFechamento, List<Prato> listPratos) {
+    public Restaurante(int imagemRestaurante ,String enderecoRestaurante , String nomeRestaurante , String horarioDeFechamento, List<Prato> listPratos) {
         this.nomeRestaurante = nomeRestaurante;
         this.enderecoRestaurante = enderecoRestaurante;
         this.imagemRestaurante = imagemRestaurante;
@@ -47,8 +47,6 @@ public class Restaurante implements Parcelable {
         }
     };
 
-    public Restaurante(int imgrest, String enderecoRestaurante, String nomeRestaurante, String horarioDeFechamento, List<Prato> pratos) {
-    }
 
     public String getNomeRestaurante() {
         return nomeRestaurante;
@@ -97,13 +95,11 @@ public class Restaurante implements Parcelable {
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int i) {
-
-        dest.writeString(nomeRestaurante);
-        dest.writeString(enderecoRestaurante);
-        dest.writeInt(imagemRestaurante);
-        dest.writeString(horarioDeFechamento);
-        dest.writeTypedList(listPratos);
-
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(nomeRestaurante);
+        parcel.writeString(enderecoRestaurante);
+        parcel.writeString(horarioDeFechamento);
+        parcel.writeInt(imagemRestaurante);
+        parcel.writeList(listPratos);
     }
 }

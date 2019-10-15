@@ -29,12 +29,13 @@ public class HomeActivity extends AppCompatActivity implements RecycleViewOnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         initViews();
 
         restauranteAdapter = new RestauranteAdapter(restaurantes(),this);
+        recyclerViewRestaurante.setAdapter(restauranteAdapter);
+
         recyclerViewRestaurante.setLayoutManager(new LinearLayoutManager(this));
 
     }

@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
         textInputLayoutEmailLog = findViewById(R.id.textInputLayoutEmailLog);
         textInputLayoutSenha = findViewById(R.id.textInputLayoutSenha);
         btnRegistrar = findViewById(R.id.btnRegistrar);
-        btnLogin = btnLogin.findViewById(R.id.btnLogin);
+        btnLogin = findViewById(R.id.btnLogin);
 
     }
 }

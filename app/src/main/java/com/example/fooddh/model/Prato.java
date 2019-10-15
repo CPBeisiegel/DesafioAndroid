@@ -67,9 +67,10 @@ public class Prato implements Parcelable {
     }
 
     @Override
-    public void writeToParcel(Parcel dest, int i) {
-        dest.writeString(nomeDoPrato);
-        dest.writeInt(imagemPrato);
-        dest.writeString(descricaoPrato);
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(nomeDoPrato);
+        parcel.writeString(descricaoPrato);
+        parcel.writeInt(imagemPrato);
+
     }
 }
